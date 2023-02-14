@@ -21,23 +21,23 @@ python downloadMouseLuo.py
 
 * Neuron-Homo
 
-Enter the Neuron-Homo folder, download GSM file using links from the excel table.
-```
-python downloadHomoLuo.py
-```
-Unzip the packages
-```
-python unzipHomoLuo.py
-```
-Untar the packages
-```
-python untarHomoLuo.py
-```
-Encode ```y``` and ```pos```
-```
-sh encodeHomoLuo.sh
-```
-Combine encoded ```y``` and ```pos```
-```
-sh combineHomoLuo.sh
-```
+  Enter the Neuron-Homo folder, download GSM file using links from the excel table.
+  ```
+  python downloadHomoLuo.py
+  ```
+  Unzip the packages
+  ```
+  python unzipHomoLuo.py
+  ```
+  Untar the packages
+  ```
+  python untarHomoLuo.py
+  ```
+  Encode ```y``` and ```pos```
+  ```
+  sh encodeHomoLuo.sh
+  ```
+  Combine encoded ```y``` and ```pos```
+  ```
+  sh combineHomoLuo.sh
+  ```
