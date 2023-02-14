@@ -3,7 +3,7 @@ import os
 import gzip
 import shutil
 
-output_directory = "E:/Homo"
+output_directory = os.getcwdb()
 # Un-gzip
 print("un_gzip:")
 cells_folder_list = []
