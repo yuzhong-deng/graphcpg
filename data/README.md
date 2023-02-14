@@ -21,7 +21,7 @@ python downloadMouseLuo.py
 
 * Neuron-Homo
 
-  Enter the Neuron-Homo folder, download GSM file using links from the excel table.
+  Enter the Neuron-Homo folder, download GSM files using official links from the excel table.
   ```
   python downloadHomoLuo.py
   ```
