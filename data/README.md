@@ -9,7 +9,7 @@
 
 * Cortex_Mouse
 
-Enter Neuron-Mouse folder (change the ```output_directory``` in  ```downloadMouseLuo.py``` to your own download folder)
+Enter the Neuron-Mouse folder (change the ```output_directory``` in  ```downloadMouseLuo.py``` to your own download folder)
 ```
 python downloadMouseLuo.py
 ```
