@@ -1,5 +1,5 @@
 # data format
-* methylation
+* methylation matrix
 * genome
 * location
 # datasets
