@@ -2,7 +2,7 @@ from tqdm import tqdm
 import os
 import tarfile
 
-output_directory = "E:/Homo"
+output_directory = os.getcwdb()
 # Un-tar
 print("un_tar:")
 for file in tqdm(os.listdir(output_directory)):
