@@ -1,13 +1,13 @@
 # Data format
 Though GraphCpG only used the methylation matrix for imputation, to compare with other models fairly, the genome and the location files are all prepared.
-We continue to use the form of input file by Gdewael https://github.com/gdewael/cpg-transformer/tree/main/data
+We continue to use the form of input file by Gdewael (https://github.com/gdewael/cpg-transformer/tree/main/data#dataset-processing-instructions)
 * Methylation matrix ```y```
 * Genome ```X```
 * Location ```pos```
 # Datasets
 * HCC, MBL, and Hemato
   
-  Same as https://github.com/gdewael/cpg-transformer/tree/main/data
+  Same as [HCC](https://github.com/gdewael/cpg-transformer/tree/main/data#hcc-dataset), [MBL](https://github.com/gdewael/cpg-transformer/tree/main/data#mbl-dataset), and [Hemato](https://github.com/gdewael/cpg-transformer/tree/main/data#hemato-dataset)
 
 * Neuron-Mouse
 
@@ -44,5 +44,6 @@ python downloadMouseLuo.py
   sh combineHomoLuo.sh
   ```
   **Genome**
+  
   (hg38) Same as [Hemato](https://github.com/gdewael/cpg-transformer/tree/main/data#genome-3) 
   
