@@ -1,7 +1,8 @@
 # data format
-* methylation matrix
-* genome
-* location
+We continue to use the form of input file by Gdewael https://github.com/gdewael/cpg-transformer/tree/main/data
+* Methylation matrix ```y```
+* Genome ```X```
+* Location ```pos```
 # datasets
 * HCC, MBL, and Hemato
   
@@ -18,3 +19,24 @@ python downloadMouseLuo.py
   
 
 * Neuron-Homo
+
+Enter the Neuron-Homo folder, download GSM file using links from the excel table.
+```
+python downloadHomoLuo.py
+```
+Unzip the packages
+```
+python unzipHomoLuo.py
+```
+Untar the packages
+```
+python untarHomoLuo.py
+```
+Encode ```y``` and ```pos```
+```
+sh encodeHomoLuo.sh
+```
+Combine encoded ```y``` and ```pos```
+```
+sh combineHomoLuo.sh
+```
