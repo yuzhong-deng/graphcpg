@@ -12,7 +12,7 @@ link_list = []
 for id,title in enumerate(excel_df.iloc[0,:]):
     if re.match(patternRandomPrimerIndex, title)!=None:
         link_list.append(excel_df.iloc[1,id])
-output_directory = "E:/Homo"
+output_directory = os.getcwdb()
 for link in tqdm(link_list[:]):
     download_link = 'https:' + link[4:]
     download_flag = True
