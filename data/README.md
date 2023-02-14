@@ -20,6 +20,8 @@ python downloadMouseLuo.py
   
 
 * Neuron-Homo
+  
+  **Methylation matrix and positions**
 
   Enter the Neuron-Homo folder, download GSM files using official links from the excel table.
   ```
@@ -41,3 +43,6 @@ python downloadMouseLuo.py
   ```
   sh combineHomoLuo.sh
   ```
+  **Genome**
+  (hg38) Same as [Hemato](https://github.com/gdewael/cpg-transformer/tree/main/data#genome-3) 
+  
