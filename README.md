@@ -1,11 +1,8 @@
 # graphcpg
 structure
 # Data
-* HCC
-* MBL
-* Hemato
-* Cortex_Mouse
-* Cortex_Homo
+* Neuron-Mouse
+* Neuron-Homo
 # Model
 * graphcpg
 
