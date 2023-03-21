@@ -8,6 +8,4 @@ structure
 * Cortex_Homo
 # Model
 * graphcpg
-* cpgtransformer
-* camelia
-* deepcpg
+
