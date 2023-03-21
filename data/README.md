@@ -9,7 +9,7 @@ We continue to use the form of input file by Gdewael (https://github.com/gdewael
   
   Same as [HCC](https://github.com/gdewael/cpg-transformer/tree/main/data#hcc-dataset), [MBL](https://github.com/gdewael/cpg-transformer/tree/main/data#mbl-dataset), and [Hemato](https://github.com/gdewael/cpg-transformer/tree/main/data#hemato-dataset)
 
-* Neuron-Mouse
+* Neuron-Mouse (Luo_Mouse)
 
 Enter the Neuron-Mouse folder (change the ```output_directory``` in  ```downloadMouseLuo.py``` to your own download folder)
 ```
@@ -19,7 +19,7 @@ python downloadMouseLuo.py
 
   
 
-* Neuron-Homo
+* Neuron-Homo (Luo_Homo)
   
   **Methylation matrix and positions**
 
