@@ -14,7 +14,9 @@
   - Neuron-Homo
 - Model
   - graphcpg
- - Visualization
+    - training
+    - imputation
+    - visualization
  
 # Environment and Packages
 
