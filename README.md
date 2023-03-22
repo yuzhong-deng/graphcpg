@@ -1,4 +1,4 @@
-# graphcpg
+# GraphCpG
 
 | Dataset      | Cell Num | (AUROC) CaMelia | (AUROC) DeepCpG | (AUROC) CpG Transformer | (AUROC) GraphCpG |
 |--------------|----------|:---------------:|:---------------:|:-----------------------:|:----------------:|
@@ -9,8 +9,8 @@
 | Neuron-Homo  |   780    |      92.98      |      90.06      |          92.31          |     **93.2**     |
 
 # Data
-* Neuron-Mouse
-* Neuron-Homo
+- Neuron-Mouse
+- Neuron-Homo
 # Model
-* graphcpg
+- graphcpg
 
