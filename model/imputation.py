@@ -19,15 +19,15 @@ import bisect
 import seaborn as sns
 from datamodules import CpGGraphImputationDataModule
 from graphcpg import CpGGraph
-# setting
+# SETTING
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 segment_size = 21
 batch_size = 10240
 n_workers = 12
-res_dir = "/home/bruce/Mylab/Bio/graphcpg/root/ckpt"
-data_path = "/home/bruce/Mylab/Bio/data/"
-dataset_dict = {"Hemato":"y_Hemato.npz"}
-ckpt_dict =    {"Hemato":"/Hemato_epoch=7-step=23536.ckpt"}
+res_dir = "" # your results saving path
+data_path = "" # your datasets path
+dataset_dict = {"Hemato":"y_Hemato.npz"} # an example of Hemato datasets name
+ckpt_dict =    {"Hemato":"/Hemato_epoch=7-step=23536.ckpt"} # an example of trained model parameters file name of Hemato
 
 y = np.load(data_path + dataset_dict["Hemato"])
 cell_num = y["chr1"].shape[1]
