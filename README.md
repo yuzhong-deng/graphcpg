@@ -9,7 +9,7 @@
 | Neuron-Homo  |   780    |      92.98      |      90.06      |          92.31          |     **93.2**     |
 
 # Visualization of locus-aware neighboring subgraphs from HCC
-![Image text](https://raw.github.com/yuzhong-deng/graphcpg/visualization_HCC_visual_prediction.png)
+![Image text](https://www.github.com/yuzhong-deng/graphcpg/visualization_HCC_visual_prediction.png)
 
 # Folders
 - Data
@@ -31,6 +31,6 @@
 - pytorch_geometric
 - torch-sparse
 - torch-geometric
-- if error (module 'distutils'), please install setuptools59.5.0
+- if error (module 'distutils'), please install setuptools 59.5.0
 
 
