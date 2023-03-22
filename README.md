@@ -9,7 +9,7 @@
 | Neuron-Homo  |   780    |      92.98      |      90.06      |          92.31          |     **93.2**     |
 
 # Visualization of locus-aware neighboring subgraphs from HCC
-![Image text](https://raw.github.com/yuzhong-deng/visualization.png)
+![Image text](https://raw.github.com/yuzhong-deng/visualization_HCC_visual_prediction.png)
 
 # Folders
 - Data
