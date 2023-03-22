@@ -209,5 +209,68 @@ class CpGGraph(GNN):
         W_out_2pool = math.floor((W_out_2conv + 2*0 - 1*(2-1) - 1)/2 + 1)
         return H_out_2pool*W_out_2pool
 
+class CpGGraphAnalysis(GNN):
+    # The GNN model of Inductive Graph-based Matrix Completion. 
+    # Use RGCN convolution + center-nodes readout.
+    def __init__(self, gconv=RGCNConv, latent_dim=[32, 64, 128, 128, 64, 32],#[32, 32, 32, 32], 
+                 num_relations=2, num_bases=2, adj_dropout=0.2, 
+                 force_undirected=False,
+                 cell_num=25, segment_size=21 ,
+                 multiply_by=1, lr=1e-3, lr_decay_factor=.90, warmup_steps=1000):
+        super(CpGGraphAnalysis, self).__init__(
+            GCNConv, latent_dim, adj_dropout, force_undirected
+        )
+        self.segment_size = segment_size
+        self.cell_num = cell_num
+        self.sum_latent_dim = sum(latent_dim)
+        self.save_hyperparameters()
+        self.multiply_by = multiply_by
+        self.convs = torch.nn.ModuleList()
+        self.convs.append(gconv(self.segment_size + 1, latent_dim[0], num_relations, num_bases))
+        for i in range(0, len(latent_dim)-1):
+            self.convs.append(gconv(latent_dim[i], latent_dim[i+1], num_relations, num_bases))
 
+        self.CNN2 = nn.Sequential(nn.Conv2d(1, 4, (5, 5), stride=(1, 5), padding=(1, 2)), nn.ReLU(), nn.MaxPool2d(2, 2),
+                                  nn.Conv2d(4, 1, (3, 3), stride=(1, 3), padding=(1, 1)), nn.ReLU(), nn.MaxPool2d(2, 2))
+        self.lin1_in_size = self.lin1_param(self.segment_size+self.cell_num, self.sum_latent_dim)
+        self.lin1 = Linear(self.lin1_in_size, 40)
+        self.hparams.lr = lr
+        self.hparams.lr_decay_factor = lr_decay_factor
+        self.hparams.warmup_steps = warmup_steps
+        self.lin2 = nn.Linear(40, 1)
+
+    def forward(self, data):
+        (
+            x, edge_index, edge_type
+        ) = (
+            data.x, data.edge_index, data.edge_type
+        )
+        if self.adj_dropout > 0:
+            edge_index, edge_type = dropout_adj(
+                edge_index, edge_type, p=self.adj_dropout, 
+                force_undirected=self.force_undirected, num_nodes=len(x), 
+                training=self.training
+            )
+        concat_states = []
+        for conv in self.convs:
+            x = conv(x, edge_index, edge_type)
+            x = torch.tanh(x)
+            concat_states.append(x) 
+        concat_states = torch.cat(concat_states, 1)
+        x = torch.reshape(concat_states, (-1, self.segment_size+self.cell_num, self.sum_latent_dim)).unsqueeze(1)
+        return x
+
+    
+    def lin1_param(self, H_in, W_in):
+        #H
+        H_out_1conv = math.floor((H_in + 2*1 - 1*(5-1) - 1)/1 + 1)
+        H_out_1pool = math.floor((H_out_1conv + 2*0 - 1*(2-1) - 1)/2 + 1)
+        H_out_2conv = math.floor((H_out_1pool + 2*1 - 1*(3-1) -1)/1 + 1)
+        H_out_2pool = math.floor((H_out_2conv + 2*0 - 1*(2-1) - 1)/2 + 1)
+        #W
+        W_out_1conv = math.floor((W_in + 2*2 - 1*(5 - 1) - 1)/5 + 1)
+        W_out_1pool = math.floor((W_out_1conv + 2*0 - 1*(2-1) - 1)/2 + 1)
+        W_out_2conv = math.floor((W_out_1pool + 2*1 - 1*(3-1) - 1)/3 + 1)
+        W_out_2pool = math.floor((W_out_2conv + 2*0 - 1*(2-1) - 1)/2 + 1)
+        return H_out_2pool*W_out_2pool
 
