@@ -9,12 +9,7 @@ We continue to use the form of input file by Gdewael (https://github.com/gdewael
   
   Same as [HCC](https://github.com/gdewael/cpg-transformer/tree/main/data#hcc-dataset), [MBL](https://github.com/gdewael/cpg-transformer/tree/main/data#mbl-dataset), and [Hemato](https://github.com/gdewael/cpg-transformer/tree/main/data#hemato-dataset)
 
-* Neuron-Mouse (Luo_Mouse)
 
-Enter the Neuron-Mouse folder (change the ```output_directory``` in  ```downloadMouseLuo.py``` to your own download folder)
-```
-python downloadMouseLuo.py
-```
 
 
   
@@ -47,5 +42,17 @@ python downloadMouseLuo.py
   
   (hg38) Same as [Hemato](https://github.com/gdewael/cpg-transformer/tree/main/data#genome-3) 
   
+* Neuron-Mouse (Luo_Mouse)
+  
+  (Similar to Neuron-Homo)
+
+  Enter the Neuron-Mouse folder (change the ```output_directory``` in  ```downloadMouseLuo.py``` to your own download folder)
+  ```
+  python downloadMouseLuo.py
+  ```
+  Untar the packages
+  ```
+  python untarMouseLuo.py
+  ```
 # Genomic Contexts
 - notebook
