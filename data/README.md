@@ -4,7 +4,11 @@ We continue to use the form of input file by Gdewael (https://github.com/gdewael
 * Methylation matrix ```y```
 * Genome ```X```
 * Location ```pos```
+
 # Datasets
+
+Please take care of output directories for these files.
+
 * HCC, MBL, and Hemato
   
   Same as [HCC](https://github.com/gdewael/cpg-transformer/tree/main/data#hcc-dataset), [MBL](https://github.com/gdewael/cpg-transformer/tree/main/data#mbl-dataset), and [Hemato](https://github.com/gdewael/cpg-transformer/tree/main/data#hemato-dataset)
