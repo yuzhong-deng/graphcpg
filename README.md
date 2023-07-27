@@ -21,6 +21,9 @@
     - training
     - imputation
     - visualization
+- Analysis
+    - hierarchical analysis
+    - differential methylation analysis
  
 # Environment and Packages
 
