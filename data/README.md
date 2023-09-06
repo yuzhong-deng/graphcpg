@@ -64,7 +64,7 @@ Please take care of output directories for these files.
   ```
   Combine encoded ```y``` and ```pos```
   ```
-  python EncodeLabelsLuo.py
+  sh EncodeLabelsLuo.sh
   ```
 # Genomic Contexts
 - notebook
