@@ -27,7 +27,8 @@ if args.prepend_chr:
     # chroms = ["chr" + c for c in chroms]
     chroms = [c for c in chroms]
 
-path = 'Luo_Homo'
+# path = 'Luo_Homo'
+path = os.getcwdb()
 os.chdir(path)
 # print(os.getcwd())
 
