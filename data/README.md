@@ -64,7 +64,7 @@ Please take care of output directories for these files.
   ```
   Combine encoded ```y``` and ```pos```
   ```
-  sh combineHomoLuo.sh
+  sh combineMouseLuo.sh
   ```
 # Genomic Contexts
 - notebook
