@@ -28,7 +28,8 @@ if args.prepend_chr:
     chroms = [c for c in chroms]
 
 # path = "/home/dyz/repo/cpg-transformer-main/data/HCC"
-path = 'E:/Homo'
+# path = 'E:/Homo'
+path = "EncodeLabelsLuo.py"
 os.chdir(path)
 # print(os.getcwd())
 
