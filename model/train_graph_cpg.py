@@ -52,7 +52,7 @@ model_parse.add_argument('--lr_decay_factor', type=float, default=.99,#.5,
                          help='Learning rate multiplicative decay applied after every epoch.')
 model_parse.add_argument('--warmup_steps', type=int, default=100,
                          help='Number of steps over which the learning rate will linearly warm up.')
-model_parse.add_argument('--maxepochs', type=float, default=10,#type=int, default=1,
+model_parse.add_argument('--maxepochs', type=float, default=1,#type=int, default=10,
                          help='Number of maximum epoch.')
 
 log_parse = parser.add_argument_group('Logging', 'Logging arguments')
