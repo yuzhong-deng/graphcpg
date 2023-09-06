@@ -72,12 +72,12 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     data_path = args.dataset_path
-    datset_dict = {"HCC":"y_HCC.npz", 
-                    "MBL":"y_MBL.npz",
-                    "Hemato":"y_Hemato.npz",
-                    "Luo_Mouse":"y_Luo_Mouse.npz",#"Neuron-Mouse"
-                    "Luo_Homo":"y_Luo_Homo.npz"#"Neuron-Homo"
-                    }
+    datset_dict = {"HCC":"y_HCC.npz"}#, 
+                    # "MBL":"y_MBL.npz",
+                    # "Hemato":"y_Hemato.npz",
+                    # "Luo_Mouse":"y_Luo_Mouse.npz",#"Neuron-Mouse"
+                    # "Luo_Homo":"y_Luo_Homo.npz"#"Neuron-Homo"
+                    # }
 
     y = np.load(data_path + datset_dict[args.dataset])
     from datamodules import CpGGraphDataModule
