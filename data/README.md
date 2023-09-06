@@ -58,13 +58,9 @@ Please take care of output directories for these files.
   ```
   python untarMouseLuo.py
   ```
-  Encode ```y``` and ```pos```
+  Encode and combine ```y``` and ```pos```
   ```
   sh encodeMouseLuo.sh
-  ```
-  Combine encoded ```y``` and ```pos```
-  ```
-  sh combineMouseLuo.sh
   ```
 # Genomic Contexts
 - notebook
