@@ -62,5 +62,9 @@ Please take care of output directories for these files.
   ```
   sh encodeMouseLuo.sh
   ```
+  **Genome**
+  
+  (mm10)
+  
 # Genomic Contexts
 - notebook
