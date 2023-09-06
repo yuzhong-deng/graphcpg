@@ -27,8 +27,7 @@ if args.prepend_chr:
     # chroms = ["chr" + c for c in chroms]
     chroms = [c for c in chroms]
 
-# path = "/home/dyz/repo/cpg-transformer-main/data/HCC"
-path = 'E:/Homo'
+path = 'Mouse_folder'
 os.chdir(path)
 # print(os.getcwd())
 
