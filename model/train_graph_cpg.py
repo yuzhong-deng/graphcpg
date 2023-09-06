@@ -52,7 +52,7 @@ model_parse.add_argument('--lr_decay_factor', type=float, default=.99,#.5,
                          help='Learning rate multiplicative decay applied after every epoch.')
 model_parse.add_argument('--warmup_steps', type=int, default=100,
                          help='Number of steps over which the learning rate will linearly warm up.')
-model_parse.add_argument('--maxepochs', type=float, default=1,#type=int, default=1,
+model_parse.add_argument('--maxepochs', type=float, default=10,#type=int, default=1,
                          help='Number of maximum epoch.')
 
 log_parse = parser.add_argument_group('Logging', 'Logging arguments')
@@ -71,7 +71,7 @@ if __name__ == '__main__':
     parser = Trainer.add_argparse_args(parser)
     args = parser.parse_args()
 
-    data_path = args.data_path
+    data_path = args.dataset_path
     datset_dict = {"HCC":"y_HCC.npz", 
                     "MBL":"y_MBL.npz",
                     "Hemato":"y_Hemato.npz",
