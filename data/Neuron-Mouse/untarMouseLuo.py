@@ -2,7 +2,7 @@ from tqdm import tqdm
 import os
 import tarfile
 
-output_directory = "E:/Mouse"
+output_directory = ""
 # Un-tar
 print("un_tar:")
 for file in tqdm(os.listdir(output_directory)):
