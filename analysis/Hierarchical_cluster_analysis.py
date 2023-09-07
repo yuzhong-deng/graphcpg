@@ -43,6 +43,6 @@ g_c = sns.clustermap(new_df, center=0, cmap="vlag", col_colors=network_colors, #
                cbar_pos=(.85, .95, .05, .04),
                linewidths=.0, figsize=(20, 4))
 g_c.ax_row_dendrogram.remove()
-g_c.ax_col_dendrogram.set_title('Imputed Subpopulation Dendrogram')
+g_c.ax_col_dendrogram.set_title('Subpopulation Dendrogram')
 g_c.ax_col_dendrogram.set_xlabel("")
 plt.setp(g_c.ax_heatmap.xaxis.get_majorticklabels(), rotation=90, fontsize=10)
