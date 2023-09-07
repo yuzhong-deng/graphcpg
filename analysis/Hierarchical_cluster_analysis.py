@@ -12,7 +12,8 @@ import bisect
 from collections import OrderedDict
 from scipy import stats
 
-df = np.load("") # your methylation matrix in dataframe
+df = np.load("") # methylation matrix in dataframe
+used_subpop = [] # labels list
 
 new_df = pd.DataFrame(np.zeros((122,122)))
 for i,cell in enumerate(tqdm(df.columns)):
