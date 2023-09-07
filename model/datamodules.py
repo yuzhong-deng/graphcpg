@@ -9,7 +9,7 @@ import scipy.sparse as ssp
 import bisect
 from tqdm import tqdm
 
-class CpGGraphDataModule(pl.LightningDataModule):#*Only IGMC
+class CpGGraphDataModule(pl.LightningDataModule):
     def __init__(self, y, segment_size=21, 
                  val_keys=None, test_keys=None,
                  batch_size=2, n_workers=4, cell_nums=False, save_cell_id=False):
