@@ -23,8 +23,8 @@ for i,cell in enumerate(tqdm(df.columns)):
         else:
             pass
 
-new_df.columns = new_col_names_columns
-new_df.index = new_col_names_columns
+new_df.columns = df.columns#new_col_names_columns
+new_df.index = df.index#new_col_names_columns
 
 # Create a categorical palette to identify the networks
 network_pal = sns.husl_palette(8, s=.45)
