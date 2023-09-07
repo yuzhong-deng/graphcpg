@@ -15,6 +15,7 @@ from scipy import stats
 df = pd.read_excel('mmc5.xlsx') #supplement file form "Farlik, Matthias, Florian Halbritter, Fabian Müller, Fizzah A. Choudry, Peter Ebert, Johanna Klughammer, Samantha Farrow, et al. “DNA Methylation Dynamics of Human Hematopoietic Stem Cell Differentiation.” Cell Stem Cell 19, no. 6 (December 1, 2016): 808–22. https://doi.org/10.1016/j.stem.2016.10.019."
 select_col = df.columns[6:229]
 df_official = df[select_col]
+df_y_subpops_imputed = np.load("") # your imputed matrix in dataframe
 
 df_imputed = pd.DataFrame(index=df.index, columns=df_y_subpops_imputed.columns)
 for chr_start_end in tqdm(df[["Chromosome","Start","End"]].iterrows(), total=df.shape[0]):
