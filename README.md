@@ -13,14 +13,14 @@
 
 
 # Folders
-- Data
-  - Neuron-Mouse
-  - Neuron-Homo
 - Model
   - graphcpg
     - training
     - imputation
     - visualization
+- Data
+  - Neuron-Mouse
+  - Neuron-Homo
 - Analysis
     - hierarchical analysis
     - differential methylation analysis
