@@ -37,4 +37,9 @@
 - torch-geometric
 - if error (module 'distutils'), please install setuptools 59.5.0
 
+# Citation
+[GraphCpG: Imputation of Single-cell Methylomes Based on Locus-aware Neighboring Subgraphs](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btad533/7255916?login=true)
 
+# License
+
+- MIT license
