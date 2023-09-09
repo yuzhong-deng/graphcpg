@@ -12,7 +12,7 @@
 ![Image text](https://github.com/yuzhong-deng/graphcpg/blob/9353ba350eaac88b10bc77c7a3c031f475456c27/visualization_HCC_visual_prediction.png)
 
 
-# Folders
+# Files
 - Model
   - graphcpg
     - training
