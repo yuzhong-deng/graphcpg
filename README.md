@@ -38,7 +38,8 @@
 - if error (module 'distutils'), please install setuptools 59.5.0
 
 # Usage
-enter the model folder
+Enter the model folder
+
 `python train_graph_cpg.py`
 
 # Citation
