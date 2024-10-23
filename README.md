@@ -39,7 +39,7 @@
 
 if error (module 'distutils'), please install setuptools 59.5.0
 
-requirement.txt is also provided for reference, but compatibility depends on the devices.
+requirement.txt is also provided for reference, but compatibility still depends on the devices.
 
 pytorch-lightning version incompatibility may cause extremely long training time and degraded result. (millions of thanks for colleagues asking questions related to this problem by emailing and in issues)
 
