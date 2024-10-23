@@ -51,6 +51,15 @@ Enter the model folder
 # Citation
 [GraphCpG: Imputation of Single-cell Methylomes Based on Locus-aware Neighboring Subgraphs](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btad533/7255916?login=true)
 
+@article{Deng2023GraphCpGIO,
+  title={GraphCpG: imputation of single-cell methylomes based on locus-aware neighboring subgraphs},
+  author={Yuzhong Deng and Jianxiong Tang and Jiyang Zhang and Jianxiao Zou and Que Zhu and Shicai Fan},
+  journal={Bioinformatics},
+  year={2023},
+  volume={39},
+  url={https://api.semanticscholar.org/CorpusID:261381228}
+}
+
 # License
 
 - MIT license
