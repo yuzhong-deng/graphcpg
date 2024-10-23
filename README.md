@@ -35,7 +35,9 @@
 - pytorch_geometric
 - torch-sparse
 - torch-geometric
+- pytorch-lightning 1.7.7
 - if error (module 'distutils'), please install setuptools 59.5.0
+requirement.txt is also provided for reference, but compatibility depends on the devices.
 
 # Usage
 Enter the model folder
